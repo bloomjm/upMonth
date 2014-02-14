@@ -18,6 +18,16 @@
         background: linear-gradient(left,rgba(250,250,250,0.8), rgb(0,128,255), rgba(250,250,250,0.8)); /* Standard syntax */
     }
     
+    a {
+        color:rgb(0,128,255);
+        text-decoration:none;
+    }
+    
+    a:hover {
+        color:rgb(0,111,223);
+        text-decoration:underline;
+    }
+    
     input {
         font-size:1.1em;
         font-family:Avenir Next,sans-serif;
@@ -299,7 +309,11 @@
     form.signin {
         height:20em;
         width:18em;
-        top:15em;
+<<<<<<< HEAD
+        top:20%;
+=======
+        top:25%;
+>>>>>>> dc741995cc04b0bf0ecf0f75286414c5371eeda2
         left:-9em;
         position:fixed;
         margin-left:50%;
