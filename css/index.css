@@ -7,7 +7,7 @@
         left:0em;
         margin:0.25em 0em;
         
-        font-family:Avenir Next,sans-serif;
+        font-family:Avenir Next, Open Sans,sans-serif;
         font-weight:300;
         font-size:1.25em; /* em to px -- em = px / ( 1.25 x 16 ) */ 
         color:rgb(75,75,75);
@@ -35,7 +35,7 @@
     }
     
     h1, h2, h3, h4 {font-weight:400;}
-    h5, h6 {font-weight:300;)}
+    h5, h6 {font-weight:400;}
     
     .outerframe {
         width:100%;
