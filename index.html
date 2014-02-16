@@ -7,43 +7,48 @@
         <link href='http://fonts.googleapis.com/css?family=Open+Sans:300' rel='stylesheet' type='text/css'>
     </head>
     <body>
+        <div class="tryit-results-modal"></div>
+        <div class="tryit-results">
+            <div class="signin-close" id="tryit-close" title="close">x</div>
+            <div class="tryit-results-frame">
+                <div class="tryit-heading"></div>
+                <div class="tryit-left">
+                    <div class="tryit-sponsored"></div>
+                    <div class="tryit-search"></div>
+                </div>
+                <div class="tryit-right">
+                    <div class="tryit-sidebar"></div>
+                </div>
+            </div>
+        </div>
         <div class="signin-modal"></div>
-            <form class="signin">
-                <div class="signin-close" title="close">x</div>
-                <h2>Sign In</h2>
-                <input type="email" value="" placeholder="e-mail address" name="EMAIL" class="signin-input" onfocus="if(this.value==this.defaultValue)this.value=''" onblur="if(this.value=='')this.value=this.defaultValue">
-                <input type="password" value="" placeholder="password" name="EMAIL" class="signin-input" onfocus="if(this.value==this.defaultValue)this.value=''" onblur="if(this.value=='')this.value=this.defaultValue">
-                <div type="submit" class="submit login">submit</div>
-                <a href="#"><h5>Forget your password?</h5></a>
-            </form>
-        
+        <form class="signin">
+            <div class="signin-close" title="close">x</div>
+            <h2>Sign In</h2>
+            <input type="email" value="" placeholder="e-mail address" name="EMAIL" class="signin-input" onfocus="if(this.value==this.defaultValue)this.value=''" onblur="if(this.value=='')this.value=this.defaultValue">
+            <input type="password" value="" placeholder="password" name="EMAIL" class="signin-input" onfocus="if(this.value==this.defaultValue)this.value=''" onblur="if(this.value=='')this.value=this.defaultValue">
+            <div type="submit" class="submit login">submit</div>
+            <a href="#"><h5>Forget your password?</h5></a>
+        </form>
         <div class="outerframe">
             <div class="header">
                 <div class="header-signin">
-                    <h4>Sign In</h4>
+                    <h5>Sign In</h5>
+                </div>
+                <div class="header-signup">
+                    Sign Up
                 </div>
             </div>
             <div class="top">
                 <div class="top-image">
-                    <img class="graphic" src="resources/image/graphic.png">
+                    <img class="graphic" src="resources/images/dropbox-main.png">
                 </div>
                 <div class="top-content">
-                    <form class="mc-list" action="http://upmonth.us3.list-manage.com/subscribe/post?u=d62aec7722d40560190693e6b&amp;id=f3828c4c82" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
                     <img class="logo" src="resources/images/upmonth_logo.png" alt="upMonth">
                     <h2>Hedge Fund discovery. Simplified.</h2>                    
-                        <div class="join-mc" id="join-mc">
-                            <input type="email" value="" placeholder="e-mail address" name="EMAIL" class="mc-input" id="mce-EMAIL" onfocus="if(this.value==this.defaultValue)this.value=''" onblur="if(this.value=='')this.value=this.defaultValue">
-                            <input type="text" value="" placeholder="first name" name="FNAME" class="mc-input" id="mce-FNAME" onfocus="if(this.value==this.defaultValue)this.value=''" onblur="if(this.value=='')this.value=this.defaultValue">
-                            <input type="text" value="" placeholder="last name" name="LNAME" class="mc-input" id="mce-LNAME" onfocus="if(this.value==this.defaultValue)this.value=''" onblur="if(this.value=='')this.value=this.defaultValue">
-                            <input type="submit" class="submit">
-                        </div>
-                    </form>
-                    <div class="show-mc" id="show-mc">
-                        <h4><a href="#bottom" id="learn-more">Find out</a> how.</h4>
-                        <h5>Join our mailing list to receive the latest updates.</h5>
-                        <div class="submit partial" id="mc-show">
-                            Join
-                        </div>
+                    <h4><a href="#bottom" id="learn-more">Find out</a> how.</h4>
+                    <div class="submit" id="">
+                        Sign Up
                     </div>
                 </div>
             </div>
@@ -68,7 +73,7 @@
                     <div class="bot-content">
                         <h2>for hedge funds.</h2>
                         <h5>Get exposure to highly qualified global investors. Give existing investors unparalleled transparency. Improve your marketing with our advanced analytics. Compliance-friendly and budget-friendly.</h5>
-                        <h5>Lorem ipsum <a href="">dolor sit amet.</a></h5>
+                        <h5>How upMonth is <a href="">helping hedge funds.</a></h5>
                     </div>
                     <img class="bot-image" src="resources/image/graphic.png">
                 </div>
@@ -77,20 +82,52 @@
                     <div class="bot-content">
                         <h2>security and privacy.</h2>
                         <h5>upMonth is designed for security, compliance and user peace of mind. We utilize state-of-the-art infrastructure, class-leading 256-bit AES encryption and two-step verification for all communications.</h5>
+                        <h5>Why upMonth takes <a href="">security so seriously.</a></h5>
                     </div>
                 </div>
-                <div class="bot-reg">
-                    <div class="submit mgr" id="mc-show">
-                        Sign up as a Manager
+                <div class="bot-4-social">
+                    <div class="bot-content">
+                        <h2>stay connected.</h2>
+                        <h5>Follow upMonth and Sign Up to receive the latest news and info. Receive updates on funds and allocators joining the platform and be the first to learn about new features.</h5>
+                        <div class="social twitter"></div>
+                        <div class="social linked"></div>
+                        <div class="social facebook"></div>
+                        <div class="social google"></div>
                     </div>
-                    <div class="submit allc" id="mc-show">
-                        Sign up as an Allocator
+                    <div class="bot-image">
+                        <h5>Join our mailing list to receive the latest updates.</h5>
+                        <form class="mc-list" action="http://upmonth.us3.list-manage.com/subscribe/post?u=d62aec7722d40560190693e6b&amp;id=f3828c4c82" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate>
+                            <div class="join-mc" id="join-mc">
+                                <input type="email" value="" placeholder="e-mail address" name="EMAIL" class="mc-input" id="mce-EMAIL" onfocus="if(this.value==this.defaultValue)this.value=''" onblur="if(this.value=='')this.value=this.defaultValue">
+                                <input type="text" value="" placeholder="first name" name="FNAME" class="mc-input" id="mce-FNAME" onfocus="if(this.value==this.defaultValue)this.value=''" onblur="if(this.value=='')this.value=this.defaultValue">
+                                <input type="text" value="" placeholder="last name" name="LNAME" class="mc-input" id="mce-LNAME" onfocus="if(this.value==this.defaultValue)this.value=''" onblur="if(this.value=='')this.value=this.defaultValue">
+                                <input type="submit" class="submit" value="Join">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="bot-tryit">
+                    <h2>Try upMonth <span class="emphasis">search.</span></h2>
+                    <form class="tryit" action="" method="post">
+                        <div class="tryit-label-box">
+                            <img class="tryit-label" src="resources/images/tryit-label.png">
+                        </div>
+                        <div class="tryit-toggle-up"></div>
+                        <div class="tryit-toggle-down"></div>
+                        <input type ="text" class="tryit-input" id="tryit-input" name="q" placeholder="Select a sample query or enter your own.">
+                        <img class="tryit-submit" src="resources/images/tryit-search.png">
+                    </form>
+                    <h5>Let upMonth's adaptive knowledge engine power your hedge fund discovery.</h5>
+                    <h5>upMonth. Intuitive. Fast. Free.</h5><br />
+                    <div class="submit mgr" id="">
+                        Sign Up
                     </div>
                 </div>
                 <div class="footer">
-                    <a href="#">pricing</a>
-                    <a href="#">business</a>
-                    <a href="#">mobile</a>
+                    <a href="#">discovery</a>
+                    <a href="#">investors</a>
+                    <a href="#">funds</a>
+                    <a href="#">security</a>
                     <a href="#">help</a>
                     <a href="#">contact</a>
                     <a href="#">privacy</a>
@@ -102,4 +139,4 @@
     
     <script src="//code.jquery.com/jquery-1.9.1.js"></script>
     <script src="//code.jquery.com/ui/1.10.4/jquery-ui.js"></script>
-    <script src="js/mailingList.js"></script>
+    <script src="js/index.js"></script>

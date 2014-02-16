@@ -48,11 +48,11 @@
     }
     
     .header {
-        width:44em;
+        width:54em;
         
-        position:absolute;
+        position:fixed;
         margin-left:50%;
-        left:-22em;
+        left:-27em;
         
         text-align:right;
         color:rgb(0,128,255);
@@ -69,6 +69,25 @@
     .header-signin:hover {
         color:rgb(0,111,223);
         text-decoration:underline;
+    }
+
+    .header-signup {
+        position:fixed;
+        height:1.5em;
+        font-size:0.85em;
+        cursor:pointer;
+        font-weight:400;
+        background-color:rgb(0,128,255);
+        border-radius:0.25em;
+        color:#fff;
+        padding:0.2em 0.75em;
+        right:4.9em;
+        top:4em;
+        display:none;
+    }
+    
+    .header-signup:hover {
+        background-color:rgb(0,111,223);
     }
     
     .top {
@@ -101,6 +120,7 @@
         position:relative;
         float:left;
         top:20%;
+        text-align:center;
     }
     
     .graphic {
@@ -118,13 +138,12 @@
     
     .mc-list {
         width:20em;
-        padding:0em 1em;
+        padding:0em 0em;
     }
     
     .join-mc {
         width:12em;
         padding:0em 4em;
-        display:none;
     }
     
     .mc-input {
@@ -139,16 +158,17 @@
         outline:none;
         font-weight:300;
         font-style:italic;
-        background-color:rgb(255,255,250);
+        background-color:rgb(255,255,255);
     }
     
     .show-mc {
         clear:both;
         width:20em;
-        padding:0em 1em;
+        padding:0em 0em;
+        text-align: center;
     }
     
-    .submit {
+    div.submit {
         width:11em;
         
         background-color:rgb(0,127,255);
@@ -157,9 +177,9 @@
         margin:0.5em 0em 0.25em 0em;
         
         position:relative;
-        float:left;
+        margin-left:50%;
+        left:-6em;
         
-        text-align:center;
         padding:0.5em;
         
         border-radius:0.2em;
@@ -248,15 +268,20 @@
         
     }
     
-    .bot-0, .bot-1, .bot-2, .bot-3 {
+    .bot-0, .bot-1, .bot-2, .bot-3, .bot-4 {
         width:100%;
-        height:12em;
+        height:13em;
+        padding:3em 0em;
+    }
+    
+    .bot-4-social {
+        width:100%;
+        height:16em;
         padding:3em 0em;
     }
     
     .bot-content{
         width:20em;
-        
         
         position:relative;
         float:left;
@@ -264,12 +289,12 @@
     }
     
     .bot-image {
-        
         width:20em;
-        height:11em;
+        height:12em;
         position:relative;
         padding:1em 1em 0em;
         float:left;
+        text-align:center;
     }
     
     .footer {
@@ -301,7 +326,7 @@
         text-decoration:underline;
     }
     
-    .signin-modal {
+    .signin-modal, .tryit-results-modal {
         height:100%;
         width:100%;
         position:fixed;
@@ -345,7 +370,7 @@
     
     form.signin a {
         
-        padding:1.0em;
+        padding:1em;
         
         color:rgb(0,128,255);
         text-decoration:none;
@@ -374,3 +399,212 @@
         background-color:#f9f9f9;
     }
     
+    .bot-tryit {
+        width:100%;
+        
+        padding:2em 0em;
+        
+        text-align:center;
+        position:relative;
+    }
+    
+    .tryit-label-box {
+        height:18em;
+        width:30em;
+        position:absolute;
+        top:-1em;
+        left:-2em;
+        z-index:-1;
+    }
+    
+    .tryit-label {
+        height:5em;
+        left:0em;
+        margin:0em;
+        position:absolute;
+        display:none;
+    }
+    
+    form.tryit{
+        width:30em;        
+        padding:3em 2em;
+        position:relative;
+        margin:0em 5em;
+        z-index:0;
+    }
+    
+    .tryit-toggle-up {
+        height:0.79em;
+        width:0.8em;
+        background-image:url("../resources/images/sprites/tryit-toggle.png");
+        background-position:0em 0em;
+        position:absolute;
+        top:3.5em;
+        left:1.25em;
+    }
+    
+    .tryit-toggle-up:hover{
+        background-position:0em -0.8em;
+        cursor:pointer;
+    }
+    
+    .tryit-toggle-down {
+        height:0.79em;
+        width:0.8em;
+        background-image:url("../resources/images/sprites/tryit-toggle.png");
+        background-position:0em -1.6em;
+        position:absolute;
+        top:4.6em;
+        left:1.25em;
+    }
+    
+    .tryit-toggle-down:hover{
+        background-position:0em -2.4em;
+        cursor:pointer;
+    }
+    
+    .tryit-input {
+        width:34em;
+        padding:0.5em;
+        margin-top:0.5em;
+        font-size:0.85em;
+        font-family:Avenir Next,sans-serif;
+        border:1px solid rgb(0,128,255);
+        border-radius:0.25em;
+        color:rgb(25,25,25);
+        outline:none;
+        font-weight:400;
+        font-style:italic;
+        background-color:rgb(255,255,255);
+    }
+    
+    .tryit-submit {
+        height:0.7em;
+        position:absolute;
+        right:2.4em;
+        top:3.1em;
+        padding:0.6em 0.5em;
+        cursor:pointer;
+    }
+    
+    .tryit-submit:hover {
+        transform:rotate(90deg);
+        -ms-transform:rotate(90deg); /* IE 9 */
+        -webkit-transform:rotate(90deg); /* Safari and Chrome */
+    }
+    
+    span.emphasis {
+        color:rgb(0,128,255);
+    }
+    
+    .social {
+        height:2em;
+        width:2em;
+        margin:1em 1.25em;
+        float:left;
+    }
+    
+    .twitter {
+        background-image:url("../resources/images/sprites/social-twitter.png");
+    }
+    
+    .twitter:hover {
+        background-position:0em -2em;
+        cursor:pointer;
+    }
+    
+    .facebook {
+        background-image:url("../resources/images/sprites/social-facebook.png");
+    }
+    
+    .facebook:hover {
+        background-position:0em -2em;
+        cursor:pointer;
+    }
+    
+    .linked {
+        background-image:url("../resources/images/sprites/social-linked.png");
+    }
+    
+    .linked:hover {
+        background-position:0em -2em;
+        cursor:pointer;
+    }
+    
+    .google {
+        background-image:url("../resources/images/sprites/social-google.png");
+    }
+    
+    .google:hover {
+        background-position:0em -2em;
+        cursor:pointer;
+    }
+    
+    .tryit-results {
+        height:90%;
+        top:5%;
+        position:fixed;
+        left:10%;
+        right:10%;
+        background-color:#fff;
+        border:2px solid rgb(0,128,255);
+        border-radius:0.5em;
+        text-align:center;
+        overflow:scroll;
+        z-index:101;
+        display:none;
+    }
+    
+    .tryit-heading {
+        height:10em;
+        width:90%;
+        position:relative;
+        margin:5% 5% 0%;
+        border:2px solid rgb(0,128,255);
+        background-color:rgba(0,128,255,0.1);
+        float:left;
+    }
+    
+    .tryit-left {
+        position:relative;
+        float:left;
+        width:52%;
+        margin:3% 0% 2% 5%;
+    }
+    
+    .tryit-right{
+        position:relative;
+        float:left;
+        width:35%;
+        margin:3% 5% 5% 3%;
+    }
+    
+    .tryit-sponsored {
+        height:7em;
+        width:100%;
+        position:relative;
+        margin:0 0 1em 0;
+        border:2px solid rgb(255,0,128);
+        background-color:rgba(255,0,128,0.1);
+        float:left;
+    }
+    
+    .tryit-sidebar {
+        height:25em;
+        width:100%;
+        position:relative;
+        margin:0% 0% 0% 0%;
+        border:2px solid rgb(255,255,128);
+        background-color:rgba(255,255,128,0.1);
+        float:left;
+    }
+    
+    .tryit-search {
+        height:17em;
+        width:100%;
+        position:relative;
+        margin:0% 0% 5% 0%;
+        border:2px solid rgb(0,128,0);
+        background-color:rgba(0,128,0,0.1);
+        float:left;
+    }
