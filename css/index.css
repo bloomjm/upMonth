@@ -481,8 +481,8 @@
     .tryit-submit {
         height:0.7em;
         position:absolute;
-        right:2.4em;
-        top:3.1em;
+        right:2.6em;
+        top:3.4em;
         padding:0.6em 0.5em;
         cursor:pointer;
     }
@@ -502,6 +502,7 @@
         width:2em;
         margin:1em 1.25em;
         float:left;
+        border-radius:1em;
     }
     
     .twitter {
@@ -590,7 +591,7 @@
     }
     
     .tryit-sidebar {
-        height:25em;
+        height:35em;
         width:100%;
         position:relative;
         margin:0% 0% 0% 0%;
@@ -600,7 +601,7 @@
     }
     
     .tryit-search {
-        height:17em;
+        height:27em;
         width:100%;
         position:relative;
         margin:0% 0% 5% 0%;
