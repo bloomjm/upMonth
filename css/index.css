@@ -21,6 +21,7 @@
     a {
         color:rgb(0,128,255);
         text-decoration:none;
+        position:realtive;
     }
     
     a:hover {
@@ -48,11 +49,11 @@
     }
     
     .header {
-        width:54em;
+        width:44em;
         
-        position:fixed;
+        position:absolute;
         margin-left:50%;
-        left:-27em;
+        left:-22em;
         
         text-align:right;
         color:rgb(0,128,255);
@@ -344,8 +345,8 @@
         left:-11em;
         position:fixed;
         margin-left:50%;
-        background-color:#fff;
-        border:1px solid #666;
+        background-color:rgb(253,253,253);
+        border:1px solid #333;
         border-radius:0.25em;
         text-align:center;
         padding:0em 2em;
@@ -365,7 +366,7 @@
         outline:none;
         font-weight:400;
         font-style:italic;
-        background-color:rgb(255,255,250);
+        background-color:rgb(255,255,255);
     }
     
     form.signin a {
